@@ -3,7 +3,7 @@ include ../include.mk
 ifeq ($(TYPE),debug)
 DEBUG_FLAGS = -Ddebug +debug_info
 else
-DEBUG_FLAGS =
+DEBUG_FLAGS = +debug_info
 endif
 
 include ../vsn.mk
